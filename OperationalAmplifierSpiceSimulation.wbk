@@ -24,8 +24,8 @@
           "color": "rgb(228, 26, 28)",
           "cursor1": {
             "position": 0.004250555221792019,
-            "x_format": "3~s",
-            "y_format": "3~V"
+            "x_format": "3~Hz",
+            "y_format": "3~dBV"
           },
           "cursorD": {
             "x_format": "3~s",
@@ -38,8 +38,8 @@
           "color": "rgb(55, 126, 184)",
           "cursor2": {
             "position": 0.00425,
-            "x_format": "3~s",
-            "y_format": "3~V"
+            "x_format": "3~Hz",
+            "y_format": "3~°"
           },
           "cursorD": {
             "x_format": "3~s",
@@ -47,6 +47,55 @@
           },
           "signal": "V(OUT)",
           "trace_type": 257
+        }
+      ]
+    },
+    {
+      "analysis": "AC",
+      "commands": [
+        ".ac dec 10 10 10Meg",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(55, 126, 184)",
+          "cursor2": {
+            "position": 11011.361082737312,
+            "x_format": "3~Hz",
+            "y_format": "3~°"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(OUT)",
+          "trace_type": 517
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "cursor1": {
+            "position": 30574.23846387191,
+            "x_format": "3~Hz",
+            "y_format": "3~dBV"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(OUT)",
+          "trace_type": 521
         }
       ]
     }
